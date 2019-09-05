@@ -37,7 +37,7 @@ export default class Signin extends Component {
           <Text style={styles.label}>E-MAIL</Text>
           <TextInput
             value={email}
-            onChangeText={() => text => this.state({ email: text })}
+            onChangeText={text => this.setState({ email: text })}
             style={styles.input}
             keyboardType="email-address"
             autoCapitalize="none"
@@ -51,7 +51,7 @@ export default class Signin extends Component {
           <Text style={styles.label}>SENHA</Text>
           <TextInput
             value={password}
-            onChangeText={() => text => this.state({ password: text })}
+            onChangeText={text => this.setState({ password: text })}
             style={styles.input}
             secureTextEntry
             autoCapitalize="none"
